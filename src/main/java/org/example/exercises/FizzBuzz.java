@@ -8,10 +8,11 @@ public class FizzBuzz {
     String result = "";
     if (number % 3 == 0) {
       result = "Fizz";
-    } else if (number % 5 == 0) {
-      return "Buzz";
-    } else {
-      return String.valueOf(number);
+    }
+    if (number % 5 == 0) {
+      result = result + "Buzz";
+    } else if (result == "") {
+      result = String.valueOf(number);
     }
     return result;
   }
