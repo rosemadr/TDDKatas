@@ -3,7 +3,7 @@ package org.example.exercises;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
-import org.example.exercises.FizzBuzz;
+//import org.example.exercises.FizzBuzz;
 
 public class FizzBuzzTest {
 
