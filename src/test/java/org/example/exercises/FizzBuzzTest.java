@@ -10,7 +10,7 @@ public class FizzBuzzTest {
     @Test
     public void testfizzBuzz() {
       FizzBuzz testFizzBuzz = new FizzBuzz();
-      assertEquals("Three", testFizzBuzz.fizzBuzz(3));
+      assertEquals("Fizz", testFizzBuzz.fizzBuzz(9));
   }
 
 }
