@@ -15,9 +15,7 @@ public class StringCalculator {
   public int sumIndividualNumbers(String string) {
     if (string.isEmpty()) {
       return 0;
-    } else if (string.)
-
-    else if (string.contains(",")) {
+    } else if (string.contains(",")) {
       String[] splitString = string.split(",");
       return handleCommas(string);
     } else if (string.contains("\n")) {
@@ -31,6 +29,11 @@ public class StringCalculator {
     int sum = 0;
     String[] splitString = string.split(",");
     for (String s : splitString) {
+      try {
+        Integer.parseInt(s);
+      } catch (NumberFormatException e) {
+        throw new IllegalArgumentException("Number expected but '" + s + "' found");
+      }
       sum += Integer.parseInt(s);
     }
     return sum;
